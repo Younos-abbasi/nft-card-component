@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary colors */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* Neutral colors */
+  /* Main BG color */
+  --Very-dark-blue-BG: hsl(217, 54%, 11%);
+  /* card BG color */
+  --Very-dark-blue: hsl(216, 50%, 16%);
+  /* Line color */
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-bold: 600;
+}
+html {
+  font-size: 18px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-BG);
+}
