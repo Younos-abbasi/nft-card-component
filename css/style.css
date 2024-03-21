@@ -11,7 +11,7 @@
   /* Main BG color */
   --Very-dark-blue-BG: hsl(217, 54%, 11%);
   /* card BG color */
-  --Very-dark-blue: hsl(216, 50%, 16%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
   /* Line color */
   --Very-dark-blue: hsl(215, 32%, 27%);
   --White: hsl(0, 0%, 100%);
@@ -32,7 +32,7 @@ body {
   align-items: center;
 }
 main {
-  background-color: var(--Very-dark-blue);
+  background-color: var(--Very-dark-blue-card);
   max-width: 350px;
   height: 90%;
   border-radius: 15px;
@@ -47,4 +47,32 @@ main {
   height: 280px;
   object-fit: cover;
   border-radius: 10px;
+}
+.card__heading {
+  color: var(--White);
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}
+.card__description p {
+  color: var(--Soft-blue);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.card__value p {
+  color: var(--Cyan);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+}
+.card__sale-duration {
+  border-bottom: 1px solid var(--Very-dark-blue);
+}
+.card__sale-duration p {
+  color: var(--Soft-blue);
+}
+.card__footer img {
+  width: 40px;
+  height: 40px;
+}
+.card__footer p {
+  color: var(--Soft-blue);
 }
