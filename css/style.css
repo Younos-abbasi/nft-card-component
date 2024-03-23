@@ -42,24 +42,40 @@ main {
   height: 90%;
   margin: 25px auto;
 }
-.card__image {
-  background-image: url(/images/image-equilibrium.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
+/* ########### */
+.card__image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.card__image1 img {
+  display: block;
+  aspect-ratio: 1 / 1;
   width: 100%;
   height: 280px;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
-  cursor: pointer;
 }
-.card__image:hover {
-  background-image: url(/images/icon-view.svg);
-  background-color: var(--Cyan);
-  background-size: auto;
+.card__image2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background: var(--Cyan);
 }
-
+.card__image-wrapper > .card__image1 img,
+.card__image-wrapper > .card__image2 {
+  transition: 200ms ease-in-out;
+}
+.card__image-wrapper > .card__image2 {
+  opacity: 0;
+}
+.card__image-wrapper:hover > .card__image2 {
+  opacity: 0.6;
+}
+/* ############## */
 .card__heading {
   color: var(--White);
   font-size: 1.2rem;
