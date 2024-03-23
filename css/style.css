@@ -42,7 +42,6 @@ main {
   height: 90%;
   margin: 25px auto;
 }
-/* ########### */
 .card__image-wrapper {
   position: relative;
   overflow: hidden;
@@ -75,7 +74,6 @@ main {
 .card__image-wrapper:hover > .card__image2 {
   opacity: 0.6;
 }
-/* ############## */
 .card__heading {
   color: var(--White);
   font-size: 1.2rem;
